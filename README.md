@@ -11,7 +11,7 @@ This decentralized application allows users to create, mint, and customize Solan
 ## 📸 Project Preview
 
 <div align="center">
-  <img src="https://github.com/VatsalCodes44/solana-faucet/blob/main/public/image.png" alt="Solana Token Creator Screenshot" width="700" />
+  <img src="https://github.com/VatsalCodes44/solana-token-launchpad/blob/main/public/image.png" alt="Solana Token Creator Screenshot" width="700" />
   <p><i>Create, customize, and mint your own Solana SPL Token with a modern UI.</i></p>
 </div>
 
