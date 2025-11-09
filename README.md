@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 💠 Solana Token Creator
 
-First, run the development server:
+A fully functional **no-code Solana SPL Token Creator** built using **Next.js**, **TypeScript**, and the **Solana Kit SDK**.  
+This decentralized application allows users to create, mint, and customize Solana tokens seamlessly — without any prior coding experience.
 
+> ⚠️ **Note:** This project interacts exclusively with the **Solana Devnet** and does **not** distribute real $SOL or mainnet tokens.
+
+---
+
+## 📸 Project Preview
+
+<div align="center">
+  <img src="https://github.com/VatsalCodes44/solana-faucet/blob/main/public/image.png" alt="Solana Token Creator Screenshot" width="700" />
+  <p><i>Create, customize, and mint your own Solana SPL Token with a modern UI.</i></p>
+</div>
+
+---
+
+## 🧩 Overview
+
+The **Solana Token Creator** provides a user-friendly interface to create new SPL tokens, upload metadata, and configure token authorities.  
+Users can connect their preferred Solana wallet, define token parameters, attach media, and deploy tokens directly on the blockchain.
+
+This project demonstrates advanced integration between **Solana SDKs**, **Metaplex metadata standards**, and **Next.js** frontend capabilities.
+
+---
+
+## 🚀 Key Features
+
+| Feature | Description |
+|----------|-------------|
+| 🪙 **Token Creation** | Instantly generate Solana SPL tokens with custom name, symbol, decimals, and total supply. |
+| 🖼️ **Metadata Upload** | Add a token image, description, and metadata stored on AWS S3. |
+| 🌐 **Social Integration** | Include links to Website, Telegram, Discord, and X (Twitter). |
+| 🧾 **Authority Management** | Optionally revoke Mint, Freeze, and Update authorities for improved trust and decentralization. |
+| 💼 **Wallet Integration** | Supports multiple Solana wallets via `@wallet-standard/react`. |
+| ⚡ **Transaction Confirmation** | Confirms each blockchain interaction with real-time feedback. |
+| 🧰 **Clean UI Components** | Built using **Tailwind CSS** and **shadcn/ui** for elegant, responsive design. |
+
+---
+
+## 🧠 Tech Stack
+
+| Technology | Role |
+|-------------|------|
+| **Next.js (App Router)** | Frontend framework for server-rendered React |
+| **React & TypeScript** | Type-safe UI and logic development |
+| **Tailwind CSS + shadcn/ui** | Modern styling and pre-built UI components |
+| **@solana/kit** | Core Solana RPC and transaction handling |
+| **@wallet-standard/react** | Wallet integration (Phantom, Solflare, Backpack, etc.) |
+| **@metaplex-foundation/mpl-token-metadata** | Token metadata creation and management |
+| **AWS S3 (Presigned URLs)** | Secure image and metadata upload system |
+| **Axios** | HTTP requests for file uploads |
+| **Sonner** | User-friendly notifications and alerts |
+
+---
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/VatsalCodes44/solana-token-creator.git
+cd solana-token-creator
 ```
+### 2️⃣ Install Dependencies
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`npm install`
+ or
+ `yarn install`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3️⃣ Configure Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env.local` file in the project root and add:
 
-## Learn More
+```
+AWS_REGION=
+AMPLIFY_BUCKET=
+# Create a role for the client with restricted permissions
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+```
+### 4️⃣ Run the Development Server
 
-To learn more about Next.js, take a look at the following resources:
+`npm run dev`
+or 
+`yarn dev`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌟 Acknowledgements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-   [Solana Kit](https://www.solanakit.com/docs)
+    
+-   [Metaplex](https://www.metaplex.com/)
+       
+-   [Tailwind CSS](https://tailwindcss.com/)
+    
+-   [Shadcn UI](https://ui.shadcn.com/)
+    
 
-## Deploy on Vercel
+----------
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💬 Feedback & Contributions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions and suggestions are welcome!  
+If you find this project helpful, please **⭐ star the repository**.
+
+----------
+
+<div align="center">
+  <p><i>Made with ❤️ by <a href="https://github.com/VatsalCodes44">VatsalCodes44</a><br>
+  Building the future of decentralized apps on Solana ⚡</i></p>
+</div>
