@@ -1,7 +1,7 @@
 
 # 💠 Solana Token Creator
 
-A fully functional **no-code Solana SPL Token Creator** built using **Next.js**, **TypeScript**, and the **Solana Kit SDK**.  
+A fully functional **no-code Solana SPL Token Creator** built using **Next.js**, **TypeScript**, **Solana Kit SDK** and **AWS S3 (presigned url)**.  
 This decentralized application allows users to create, mint, and customize Solana tokens seamlessly — without any prior coding experience.
 
 > ⚠️ **Note:** This project interacts exclusively with the **Solana Devnet** and does **not** distribute real $SOL or mainnet tokens.
